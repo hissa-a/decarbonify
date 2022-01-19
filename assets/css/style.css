@@ -199,7 +199,7 @@ h6 {
 .get-started-btn {
     color:#F0F9F7;
     border-radius: 4px;
-    padding: 7px 25px 8px 25px;
+    padding: 10px 25px 10px 25px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 16px;
@@ -470,11 +470,22 @@ text-align: center;
 # banner Section
 --------------------------------------------------------------*/
 #button-signup-div {
-    padding-bottom: 10em;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px; /* this */
+
 }
+#button-signup-div > div {
+    flex: 0.5 0.5 auto;
+    text-align: center;
+  
+    margin: 50px;  /* and that, will result in a 10px gap */
+  }
+
 
 #banner {
-    background: url("../../wp-content/uploads/banner/banner3.jpg") top center;
+    background: url("../../wp-content/uploads/banner/bannerad.jpg") top center;
     position: relative;
     background-size: cover;
    
@@ -488,7 +499,7 @@ text-align: center;
     top: 0;
     left: 0;
     right: 0;
-    opacity: 85%;
+    opacity: 80%;
 
 }
 
@@ -498,6 +509,11 @@ text-align: center;
     text-align: center;
 }
 
+#bannert {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 #banner h1 {
     margin: 0;
@@ -506,6 +522,7 @@ text-align: center;
     line-height: 80px;
     color: #fff;
     font-family: "Poppins", sans-serif;
+ 
 }
 
 #banner h1 span {
@@ -518,8 +535,9 @@ text-align: center;
     margin-bottom: 3em;
     padding-bottom: 0.5em;
     margin-block: auto;
-    color: #198754;
+    color: #02130b;
     font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; 
+ 
 }
 #banner h3 {
     color: #F0F9F7; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; 
@@ -571,7 +589,7 @@ text-align: center;
     background: url("../img/back2.jpg") top center;
     background-size: cover;
     position: relative;
-    opacity: 0.58;
+
 }
 
 #hero:before {
