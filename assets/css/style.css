@@ -1,33 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,600&family=Risque&display=swap');
+
 /**
 * Template Name: Gp - v4.7.0
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 /*--------------------------------------------------------------
 # change the menue item
 --------------------------------------------------------------*/
 
-
-
-#contact-item{
-    background: #51a366;
+#contact-item {
+    background: #cddd07;
     border-radius: 30px;
     width: 120px;
-    padding-left: 10px;
+    padding-left: 18px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
     align-items: center;
-
 }
+
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -160,7 +160,6 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
- 
 }
 
 #header.header-scrolled,
@@ -179,8 +178,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
-   
+    color: #fff;
 }
 
 #header .logo a span {
@@ -197,22 +195,20 @@ h6 {
 --------------------------------------------------------------*/
 
 .get-started-btn {
-    color:#F0F9F7;
+    color: #F0F9F7;
     border-radius: 4px;
     padding: 10px 25px 10px 25px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 16px;
     display: inline-block;
-    border: 2px solid #a6fb7a;
     /* Black shadow with 10px blur */
     box-shadow: 2px 3px;
     width: 150px;
+    background-color: #414440;
 }
 
-.get-started-btn:hover {
-    
-    
+.button-signup-div:hover {
     color: #a6fb7a;
 }
 
@@ -221,6 +217,50 @@ h6 {
         padding: 7px 20px 8px 20px;
         margin-right: 15px;
     }
+    #header {
+        padding: 0 20px;
+    }
+}
+
+.button-signup-div {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    /* this */
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.icon-box1,
+.icon-box2 {
+    color: #8a8d89;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    /* Black shadow with 10px blur */
+    box-shadow: 2px 3px;
+    width: 80px;
+}
+
+.icon-box1 {
+    margin-right: 3em;
+    background-color: #ff6910;
+}
+
+.icon-box2 {
+    color: #cddd07;
+}
+
+.button-signup-div>div {
+    flex: 0.5 0.5 auto;
+    text-align: center;
+    /* and that, will result in a 10px gap */
 }
 
 
@@ -358,6 +398,7 @@ h6 {
 @media (max-width: 991px) {
     .mobile-nav-toggle {
         display: block;
+        margin-left: 13rem;
     }
     .navbar ul {
         display: none;
@@ -453,42 +494,32 @@ h6 {
 /*--------------------------------------------------------------
 # headings
 --------------------------------------------------------------*/
-.heading1{
-color: rgba(255, 255, 255, 0.9);
-font-size: 2em;
-margin-bottom: 0.5em;
-padding-bottom: 0.5em;
-margin-top: 0.5em;
-color: #00291F;
-/*font-family: "Raleway", sans-serif;  */
-font-family: 'Trocchi', serif; 
-font-size: 45px; font-weight: normal; line-height: 28px; 
-text-align: center;
+
+.heading1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: #00291F;
+    /*font-family: "Raleway", sans-serif;  */
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: center;
 }
+
 
 /*--------------------------------------------------------------
 # banner Section
 --------------------------------------------------------------*/
-#button-signup-div {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    padding: 5px; /* this */
-
-}
-#button-signup-div > div {
-    flex: 0.5 0.5 auto;
-    text-align: center;
-  
-    margin: 50px;  /* and that, will result in a 10px gap */
-  }
-
 
 #banner {
     background: url("../../wp-content/uploads/banner/bannerad.jpg") top center;
     position: relative;
     background-size: cover;
-   
+    opacity: 0.75;
 }
 
 #banner:before {
@@ -500,18 +531,18 @@ text-align: center;
     left: 0;
     right: 0;
     opacity: 80%;
-
 }
 
 #banner .container {
     position: relative;
-    padding-top: 70px;
+    /* padding-top: 8rem; */
     text-align: center;
+    height: 500px;
 }
 
 #bannert {
     position: absolute;
-    top: 0;
+    top: 6em;
     right: 0;
 }
 
@@ -522,7 +553,6 @@ text-align: center;
     line-height: 80px;
     color: #fff;
     font-family: "Poppins", sans-serif;
- 
 }
 
 #banner h1 span {
@@ -535,12 +565,24 @@ text-align: center;
     margin-bottom: 3em;
     padding-bottom: 0.5em;
     margin-block: auto;
-    color: #02130b;
-    font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; 
- 
+    color: #100800;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 48px;
+    opacity: 1;
+    z-index: -100;
 }
+
 #banner h3 {
-    color: #F0F9F7; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; 
+    color: #F0F9F7;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: .6px;
+    color: #000000;
+    margin: 2rem 0;
 }
 
 #banner .icon-box {
@@ -578,18 +620,18 @@ text-align: center;
 #banner .icon-box:hover {
     border-color: #51a366;
 }
+
+
 /*--------------------------------------------------------------
 # hero Section
 --------------------------------------------------------------*/
 
 #hero {
-    
     width: 100%;
     /* height: 100vh; * I remove it because it give much space*/
     background: url("../img/back2.jpg") top center;
     background-size: cover;
     position: relative;
-
 }
 
 #hero:before {
@@ -607,7 +649,6 @@ text-align: center;
     padding-top: 30px;
     text-align: left;
 }
-
 
 #hero h1 {
     margin: 0;
@@ -683,6 +724,47 @@ text-align: center;
         line-height: 24px;
     }
 }
+
+@media (max-width: 1024px) {
+    .count .content {
+        padding: 0 25px;
+    }
+    #banner .container {
+        margin-bottom: 4rem;
+    }
+    #banner {
+        opacity: 0.75;
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile-nav-toggle {
+        margin-left: 10rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    #bannert {
+        top: 8em;
+    }
+    #bannert h3 {
+        color: #210d02fa !important;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    #bannert h2 {
+        font-size: 60px;
+    }
+}
+
+
+/* .icon-box2 {
+    border: 2px solid #ff6910;
+    max-width: 150px;
+    text-decoration: #ff6910;
+    height: 45px;
+    
+} */
 
 
 /*--------------------------------------------------------------
@@ -836,20 +918,25 @@ section {
     background-size: cover;
     min-height: 400px;
 }
+
+
 /*--------------------------------------------------------------
 # to color sections backround
 --------------------------------------------------------------*/
-#about{
-    background: #F0F9F7;
-}
-#portfolio{
-    background: #F0F9F7;
-}
-   
-#team{
 
+#about {
     background: #F0F9F7;
 }
+
+#portfolio {
+    background: #F0F9F7;
+}
+
+#team {
+    background: #F0F9F7;
+}
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -857,7 +944,8 @@ section {
 .services .icon-box {
     text-align: center;
     border: 1px solid #ebebeb;
-    padding: 80px 20px;
+    padding: 20px 20px;
+    margin-bottom: 2rem;
     transition: all ease-in-out 0.3s;
     background: #fff;
 }
@@ -1147,7 +1235,7 @@ section {
 --------------------------------------------------------------*/
 
 .counts .content {
-    padding: 30px 0;
+    padding: 30px 25px;
 }
 
 .counts .content h3 {
@@ -1205,13 +1293,12 @@ section {
 
 .counts .image {
     background: url("../img/counts-img.jpg") center center no-repeat;
-    
     background-size: cover;
     min-height: 400px;
 }
+
 #experts .image {
     background: url("../img/about.jpg") center center no-repeat;
-    
     background-size: cover;
     min-height: 400px;
 }
